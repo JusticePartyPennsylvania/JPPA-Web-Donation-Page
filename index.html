@@ -1,0 +1,89 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Justice Party Donation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+</head>
+<body style="width:600px;">
+    <h4 align="center">Please show your support for the Justice Party of Pennsylvania.</h4>
+    <div id="formArea">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            <input type="hidden" name="hosted_button_id" value="EFQST2X9XWYCE" />
+            <input type="hidden" value="donorName" name="on0"/>
+            <input type="hidden" value="Street" name="on1" />
+            <input type="hidden" value="CityStateZip" name="on2" />
+            <input type="hidden" value="Employer" name="on3" />
+            <input type="hidden" value="Occupation" name="on4" />
+            <input type="hidden" value="EmployerAddress" name="on5" />
+            <input type="hidden" value="Eligible" name="on6"/>
+            <input type="hidden" value="Justice Party of PA Contribution" name="item_name" />
+            <input type="hidden" value="PayPalTech" name="bn" />
+            <input type="hidden" value="_xclick" name="redirect_cmd" />
+            <input type="hidden" value="fundraising@justicepartyofpa.org" name="business" />
+            <input type="hidden" value="_ext-enter" name="cmd" />
+            <div><p>(* required fields)</p></div>
+            <div id="errorContainer">
+                <p>Please correct the following errors and try again:</p>
+                <ul />
+            </div>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p><a href="http://ballotpedia.org/wiki/index.php/Campaign_finance_requirements_for_Pennsylvania_ballot_measures#Anonymous_contributions" target="_blank">Pennsylvania law</a> prohibits us from using anonymous contributions.  Please provide us with your first name, last name, and mailing address.</p>
+                <div>
+                    <label for="os0">Name *</label>
+                    <input id="os0" name="os0" size="72" />
+                </div>
+                <div>
+                    <label for="os1">Street Address *</label>
+                    <input id="os1" name="os1" size="72" />
+                </div>
+                <div>
+                    <label for="os2">City, State, Zip *</label>
+                    <input id="os2" name="os2"  size="72" />    
+                </div>
+            </fieldset>
+            <fieldset id="employment_info">
+                <legend>Employment Information</legend>
+                <p><a href="http://www.law.cornell.edu/cfr/text/11/104.3#i_4" target="_blank">Federal law</a> requires us to use our best efforts to collect and report the name, mailing address, occupation and name of employer of individuals whose contributions 
+                    exceed $200 in a calendar year.</p>
+                <p>If unemployed, enter 'None' for Employer name.</p>
+                <div>
+                    <label for="os3">Employer *</label>
+                    <input id="os3" name="os3" size="72" />
+                </div>
+                <div>
+                    <label for="os4">Occupation *</label>
+                    <input id="os4" name="os4" size="72" />
+                </div>
+                <div>
+                    <label for="os5">Place of Business *</label>
+                    <input id="os5" name="os5" size="72" />    
+                </div>
+            </fieldset>
+            <fieldset id="eligibility">
+                <legend>Legal Eligibility</legend>
+                <p>Please confirm your legal eligibility to make a contribution to a political committee in the U.S.</p>
+                <div>
+                    <input type="checkbox" name="os6" value="eligible" />
+                    I confirm that the following statements are true and accurate: *
+                    <ul>
+                        <li>I am either a U.S. citizen or a legal permanent resident of the U.S.</li>
+                        <li>I am not a Federal government contractor.</li>
+                        <li>This contribution is not made from the general treasury funds of a corporation, labor organization, national bank, or political action committee.</li>
+                        <li>This contribution is made from my own funds, and these funds were not provided to me by another person or entity for the purpose of making this contribution.</li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Donation</legend>
+                <label for="amount">Amount in USD *</label>
+                $<input name="amount" id="amount" class="required money" size="7" />
+            </fieldset>
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" id="paypalSubmit" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿div {
+    clear: both;
+    margin: 5px;
+}
+
+div.multi {
+    clear: none;
+    float: left;
+}
+
+fieldset {
+    margin: 10px;
+    border-width: 1px;
+    border-color: #24355D;
+}
+
+fieldset legend {
+    font-size: large;
+    color: #24355D;
+}
+
+fieldset p {
+    font-style: italic;
+    font-size: small;
+    color: #24355D;
+}
+
+label {
+    display: block;
+    color: #24355D;
+}
+
+.radio {
+    margin-left: 20px
+}
+
+input.error, select.error {
+    outline: 1px solid Red;
+     
+}
+
+#errorContainer {
+    display: none;
+    overflow: auto;
+    background-color: #FFDDDD;
+    border: 1px solid #FF2323;
+    padding-top: 0;
+}
+ 
+#errorContainer label {
+    float: none;
+    width: auto;
+}
